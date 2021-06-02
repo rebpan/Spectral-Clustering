@@ -26,4 +26,4 @@ Y = X./repmat(sqrt(sum(X.^2,2)),1,k);
 % figure,plot(Y(:,1),Y(:,2),'ro'),title('Data points after map'),grid on;
 
 result_labels = kmeans(Y,k);
-draw(S,true_labels);
+draw(S,result_labels);
